@@ -1330,6 +1330,7 @@ html {
 @media only screen and (max-width: 1440px) {
     .welcome {
         height: 100%;
+        margin-bottom: 0px;
     }
 
     .welcome_info {
@@ -1399,6 +1400,11 @@ html {
 
     .welcome_info {
         width: 90%;
+        margin-top: 100px;
+    }
+
+    .welcome_info > .software_title {
+        font-size: 14px;
     }
 
     .control_buttons > a {
@@ -1406,6 +1412,14 @@ html {
     }
     .projects {
         margin-top: -20px;
+    }
+
+    .skills_container > div:first-child {
+        display: none;
+    }
+    
+    .author {
+        margin-bottom: 20px;
     }
 }
 
@@ -1416,5 +1430,23 @@ html {
 
     .welcome_info > .title {
         font-size: 2em;
+    }
+
+    .author {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .welcome_info > .welcome_description {
+        font-size: 14px;
+    }
+
+    .contact > .contact_content > p:nth-child(3) {
+        font-size: 16px;
+    }
+
+    .author {
+        margin-bottom: 20px;
     }
 }
