@@ -1105,6 +1105,17 @@ html {
         padding: 20px;
     }
 
+    .project_infos .info .skills_used {
+        position: relative;
+        width: 100%;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
     .project_container .project_grid > div:nth-child(1) {
         width: 0%;
         padding: 0;
@@ -1114,7 +1125,7 @@ html {
         width: 100%;
         position: relative;
         margin-bottom: 20px;
-        height: 15%;
+        height: auto;
     }
 
     .project_infos .info .project_specific_info p {
@@ -1170,7 +1181,18 @@ html {
 
     .project_infos {
         width: 100%;
-        height: 100%;
+        height: auto;
+    }
+
+    .project_infos .info .skills_used {
+        position: relative;
+        width: 100%;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 
     .grid_container > .about {
@@ -1185,42 +1207,107 @@ html {
 }
 
 @media only screen and (max-width: 479px) {
-    .grid_container > .welcome {
-        height: calc(100vh + 700px);
+    .grid_container {
+        background: var(--darkshade_opacity);
+        width: 479px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
     }
+
+    .grid_container > .welcome {
+        width: 479px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .welcome_info {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        width: 90%;
+        margin-top: 200px;
+        padding: 0px 7%;
+        flex-direction: column;
+    }
+
     .skills_container {
-        height: 1400px;
+        height: 700px;
+    }
+
+    .skills_container > div:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        z-index: 1;
+        position: relative;
     }
 
     .grid_container > .projects {
-        height: 800vh;
+        height: 100%;
+        align-items: center;
+        width: 479px;
+        overflow: hidden;
     }
 
     .project_infos {
         width: 100%;
-        height: 100%;
+        height: auto;
+    }
+
+    .project_infos .info .skills_used {
+        position: relative;
+        width: 100%;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 
     .grid_container > .about {
-        height: 275vh;
+        height: 100%;
+        width: 479px;
     }
 
     .flex_about {
         flex-direction: column;
-        height: 230vh;
+        height: 90%;
         padding: 20px;
     }
 
-    body {
-        background: url("images/background_image.jpg");
-        position: fixed;
+    .grid_about > div > div {
+        width: 40%;
+        height: auto;
+        background: var(--darkshade_background);
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 10px;
+        box-shadow: 0px 5px var(--main_background);
+        border-bottom: 2px solid var(--accent_colour2);
     }
 
-    .background_display > img {
-        display: none;
+    .grid_container > .contact {
+        width: 479px;
+        overflow: hidden;
     }
-    
-    .background_image > img {
-        display: none;
+
+    .grid_container > .author {
+        width: 479px;
+        overflow: hidden;
     }
 }
