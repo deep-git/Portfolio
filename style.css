@@ -11,6 +11,7 @@
     --main_background: #3A4750;
     --darkshade_background: #303841;
     --darkshade_opacity: rgba(48, 56, 65, 0.6);
+    --darkshades_opacity: rgba(48, 56, 65, 0.9);
     --shade_background: #29A19C;
     --accent-colour1: #E23E57;
     --accent_colour2: #29A19C;
@@ -254,19 +255,15 @@ html {
     position: relative;
     grid-template-columns: 1fr;
     margin-left: 90px;
-    background: var(--darkshade_opacity);
+    background: var(--darkshades_opacity);
     z-index: 1;
-}
-
-.grid_container > div {
-    background: var(--darkshade_opacity);
 }
 
 /* ----------------------- WELCOME PAGE --------------------------- */
 
 .grid_container > .welcome {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -976,6 +973,10 @@ html {
 }
 
 @media only screen and (max-width: 1750px) {
+    .welcome {
+        margin-bottom: 425px;
+    }
+
     .grid_container > .about {
         height: 200vh;
     }
@@ -1309,5 +1310,111 @@ html {
     .grid_container > .author {
         width: 479px;
         overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    .welcome {
+        height: 100%;
+    }
+
+    .skills_container {
+        height: auto;
+    }
+
+    .projects {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .welcome {
+        height: 100%;
+    }
+
+    .welcome_info {
+        width: 75%;
+    }
+
+    .projects {
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .skills_container {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .grid_container > .projects {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .project_container {
+        height: auto;
+    }
+
+    .project_infos {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .skills_container {
+        height: auto;
+    }
+
+    .projects {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .skills_container {
+        height: auto;
+    }
+
+    .projects {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid_container {
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        background: var(--darkshades_opacity);
+    }
+
+    .grid_container > div {
+        width: auto;
+    }
+    
+    .grid_container > .welcome {
+        height: auto;
+    }
+
+    .welcome_info {
+        width: 90%;
+    }
+
+    .control_buttons > a {
+        margin: 0px 20px;
+    }
+    .projects {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .welcome_info {
+        width: 75%;
+    }
+
+    .welcome_info > .title {
+        font-size: 2em;
     }
 }
