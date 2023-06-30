@@ -2,244 +2,583 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/285de03c33.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/website_icon1.png">
 </head>
 <body>
-    <!--
-    <div id="container_main_grid">
-        <div id="container_left_fixed">
-            <div id="container_sidebar">
-                <p id="title">{ Portfolio }</p>
-                <nav>
-                    <ul>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Qualifications</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-                <div id="profile">
-                    <div id="profile_img"></div>
-                    <div id="profile_text">
-                        <p>Deepak Thangella</p>
-                        <p>Bachelor of Software Engineering</p>
+    <div class="fixed_container">
+        <div class="sidebar">
+            <!--
+            <div class="colour_theme">
+                <ion-icon name="sunny"></ion-icon>
+                <ion-icon name="moon"></ion-icon>
+            </div>
+            -->
+            <a href="#welcome">
+                <div class="welcome_icon">
+                    <ion-icon name="home"></ion-icon>
+                </div>
+            </a>
+            <a href="#projects">
+                <div class="projects_icon">
+                    <ion-icon name="code"></ion-icon>
+                </div>
+            </a>
+            <a href="#about">
+                <div class="about_icon">
+                    <ion-icon name="person"></ion-icon>
+                </div>
+            </a>
+            <a href="#contact">
+                <div class="contact_icon">
+                    <ion-icon name="mail"></ion-icon>
+                </div>
+            </a>
+            <div class="profile_section">
+                <img src="images/astro.png" alt="">
+            </div>
+        </div>
+        <!--
+        <div class="contact_container">
+            <div>
+                <div id="style_line" class="style_line"></div>
+                <a href="https://github.com/deep-git" target="_blank"><div class="reference github"><ion-icon name="logo-github"></ion-icon></div></a>
+                <a href="https://www.linkedin.com/in/deepak-thangella-ab5187279/" target="_blank"><div class="reference linkedin"><ion-icon name="logo-linkedin"></ion-icon></div></a>
+                <div id="style_line1" class="style_line1"></div>
+            </div>
+        </div>
+        -->
+        <!--
+        <div class="email_container">
+            <div>
+                <div id="style_line" class="style_line"></div>
+                <div class="email_content"><p>deepakthangella5@gmail.com</p></div>
+                <div id="style_line1" class="style_line1"></div>
+            </div>
+        -->
+        </div>
+        <div class="background_display">
+            <img src="images/background_image.jpg" alt="background">
+        </div>
+
+        <div class="background_image">
+            <img src="images/blob2.png" alt="">
+        </div>
+       
+    </div>
+
+    <div class="grid_container">
+
+        <!-- ------------------------------------------ WELCOME PAGE ----------------------------------------------------- -->
+
+        <div id="welcome" class="welcome">
+            <div class="welcome_info">
+                <p class="title">Deepak Thangella</p>
+                <p class="software_title">< Software engineer /></p>
+                <p class="welcome_description">
+                    I am an individual who pursues a full-time position in the field
+                    of web development, specifically full-stack web development, where the 
+                    skills that I have learned and continue to cultivate will come to fruition.
+                </p>
+            </div>
+            <div class="control_buttons">
+                <a href="#contact"><div class="btn contact_button">Contact</div></a>
+                <a href="https://deep-git.github.io/resume/" target="_blank"><div class="btn resume_button">Resume</div></a>
+            </div>
+            <div class="skills_container">
+                <div class="scroll_down"><ion-icon name="arrow-down-outline"></ion-icon></div>
+                <div>
+                    <h2>Skills</h2>
+                </div>
+                <div>
+                    <div class="skill html">
+                        <div class="show_text">
+                            <p>HTML</p>
+                        </div>
+                        <ion-icon name="logo-html5"></ion-icon>
+                    </div>
+                    <div class="skill css">
+                        <div class="show_text">
+                            <p>CSS</p>
+                        </div>
+                        <ion-icon name="logo-css3"></ion-icon>
+                    </div>
+                    <div class="skill javascript">
+                        <div class="show_text">
+                            <p>Javascript</p>
+                        </div>
+                        <ion-icon name="logo-javascript"></ion-icon>
+                    </div>
+                    <div class="skill react">
+                        <div class="show_text">
+                            <p>React</p>
+                        </div>
+                        <ion-icon name="logo-react"></ion-icon>
+                    </div>
+                    <div class="skill react-native">
+                        <div class="show_text">
+                            <p>React Native</p>
+                        </div>
+                        <ion-icon name="logo-react"></ion-icon>
+                    </div>
+                    <div class="skill node">
+                        <div class="show_text">
+                            <p>Node.js</p>
+                        </div>
+                        <ion-icon name="logo-nodejs"></ion-icon>
+                    </div>
+                    <div class="skill express">
+                        <div class="show_text">
+                            <p>Express.js</p>
+                        </div>
+                        <iconify-icon icon="simple-icons:express"></iconify-icon>
+                    </div>
+                    <div class="skill postgresql">
+                        <div class="show_text">
+                            <p>PostgreSQL</p>
+                        </div>
+                        <iconify-icon icon="akar-icons:postgresql-fill"></iconify-icon>
+                    </div>
+                    <div class="skill firebase">
+                        <div class="show_text">
+                            <p>Firebase</p>
+                        </div>
+                        <iconify-icon icon="simple-icons:firebase"></iconify-icon>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="container_right_fixed">
-            <div id="container_right">
-                <img src="images/sunset.jpg" alt="">
-                <div id="transparent_container"></div>
-                <p id="page_title">< Deepak's Portfolio /></p>
-                <div id="languages">
-    
-                </div>
+
+        <!-- ------------------------------------------ PROJECTS PAGE  ----------------------------------------------------- -->
+
+        <div id="projects" class="projects">
+            <div class="project_title">
+                <p>Projects</p>
             </div>
-        </div>
-    </div>
--->
-    <div id="container_wrapper">
-        <div id="container_wrapper_left">
-            <div id="sidebar">
-                <div id="sidebar_content">
-                    <a href="#container_right" id="title">{ Portfolio }</a>
-                    <nav>
-                        <ul>
-                            <li><a href="#container_project">.Projects()</a></li>
-                            <li><a href="#container_qualifications">.Resume()</a></li>
-                            <li><a href="#contact">.Contact()</a></li>
+
+            <div class="project_container">
+                <div class="project_grid">
+                    <div class="project_click">
+                        <ul class="project_title_scroll">
+                            <li class="project cheatsheet">Cheatsheet</li>
+                            <li class="project materials">Materials Design</li>
+                            <li class="project message_mixer">Message Mixer</li>
+                            <li class="project movie_database">Movie Database</li>
+                            <li class="project todolist">Todo-list</li>
+                            <li class="project photo_organizer">Photo Organizer</li>
+                            <li class="project todoapp">Todo-app</li>
+                            <li class="project calories">Calorie Counter</li>
+                            <li class="project weather">Weather App</li>
+                            <li class="project calculator">Calculator</li>
                         </ul>
-                    </nav>
-                    <div id="profile">
-                        <div id="profile_img"></div>
-                        <div id="profile_text">
-                            <p>Deepak Thangella</p>
-                            <p>Bachelor of Software Engineering</p>
+                    </div>
+
+                    <div class="project_infos">
+                        <div class="info cheatsheet_info active-projects">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Cheatsheet" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://deep-git.github.io/Cheatsheet/" target="_blank">
+                                    <div class="view_project_link">
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Cheatsheet</h2>
+                                <p>A cheatsheet containing noteable HTML and CSS tags, as well as their descriptions and uses. 
+                                    This cheatsheet is useful for referencing any forgotten tags</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+
+                        <div class="info materials_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Materials-design" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://deep-git.github.io/Materials-design/" target="_blank">
+                                    <div class="view_project_link">
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Materials Design</h2>
+                                <p>Created an HTML & CSS static website containing a structured set of frequently used material design 
+                                    tools such as color palettes, fonts, headers, styles, etc...</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <div class="info message_mixer_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/message-mixer" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Message Mixer</h2>
+                                <p>A javascript application that whenever run on the terminal, outputs a random positive message each run, comprised of three segments.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                        <div class="info movie_database_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Movie-database" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://deep-git.github.io/Movie-database/" target="_blank">
+                                    <div class="view_project_link">
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Movie Database</h2>
+                                <p>A movie database application that utilizes an API to display and search through various user requested movies. 
+                                    The user has the ability to search movies, add movies to a watch list, and watched list.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>React</p>
+                            </div>
+                        </div>
+                        <div class="info todolist_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Todo-list" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Todo-list</h2>
+                                <p>A PERN todo-list application that deals with user requests and responses, and utilizes states and PostgreSQL database 
+                                    to keep track of and change todo-list items.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>React</p>
+                                <p>Node.js</p>
+                                <p>Express.js</p>
+                                <p>PostgreSQL</p>
+                            </div>
+                        </div>
+                        <div class="info photo_organizer_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/rnlclngpilar/photoOrganizer-CapstoneProject" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Photo Organizer</h2>
+                                <p>Consisting of a team of 4, created an Android photo organization application with photo storage and organization capabilities, 
+                                    as well as machine learning techniques to search through and remove any redundant and low-quality images.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>Java</p>
+                                <p>XML</p>
+                                <p>Firebase</p>
+                                <p>Android Studio</p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="info todoapp_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Cheatsheet" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="view_project_link">
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Todo App</h2>
+                                <p>A todo-list mobile application using react native that contains various functionalities, such as users being able to add new todo lists, 
+                                    add todo items, check off completed items, etc. All of the data of todo lists and their features are stored and retrieved 
+                                    through Firebase's Cloud Firestore database.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>Javascript</p>
+                                <p>React</p>
+                                <p>React Native</p>
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                    -->
+                        <div class="info calories_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/SOFE4640-CalorieTracker" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Calorie Tracker</h2>
+                                <p>A calorie tracker application that enables users to track calorie amounts 
+                                    consumed each day. Users are able to add meals for breakfast, lunch, dinner, 
+                                    and snacks through the use of a food API. The total amount of daily calories 
+                                    consumed are displayed, and users are able to go back and forth to view the history 
+                                    of each day.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>Java</p>
+                                <p>XML</p>
+                                <p>Firebase</p>
+                                <p>Android Studio</p>
+                            </div>
+                        </div>
+                        <div class="info weather_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Weather-app" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://deep-git.github.io/Weather-app/" target="_blank">
+                                    <div class="view_project_link">
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Weather</h2>
+                                <p>A weather observation application that allows users to view the current 
+                                    real-time weather statistics of any city searched. The application utilizes 
+                                    a weather API to collect the weather related information of each city and 
+                                    search queries are used to bring up specific cities.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>React</p>
+                            </div>
+                        </div>
+                        <div class="info calculator_info">
+                            <div class="project_controls">
+                                <a href="https://github.com/deep-git/Calculator" target="_blank">
+                                    <div class="github_project_link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://deep-git.github.io/Calculator/" target="_blank">
+                                    <div class="view_project_link">
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_specific_info">
+                                <h2>Calculator</h2>
+                                <p>A simple calculator app that allows users to perform basic arithmetic operations such 
+                                    as addition, substraction, multiplication, and division on numbers and get their results 
+                                    to be displayed.</p>
+                            </div>
+                            <div class="skills_used">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="container_wrapper_right">
-            <div id="container_right">
-                <img src="images/sunset.jpg" alt="">
-                <div id="transparent_container"></div>
-                <p id="page_title">< Deepak's Portfolio /></p>
-                <div id="scroll_container">
-                    <div id="scroll_to_bottom">Scroll to Bottom</div>
-                    <div id="scroll_shape"></div>
+
+        <!-- ------------------------------------------ ABOUT PAGE ----------------------------------------------------- -->
+
+        <div id="about" class="about">
+            <div class="about_title">
+                <p>About</p>
+            </div>
+            <div class="flex_about">
+                <div class="grid_about">
+                    <div>
+                        <div>
+                            <div class="icon_about">
+                                <ion-icon name="school"></ion-icon>
+                            </div>
+                            <div class="about_text">
+                                <p>Graduated from OntarioTech University</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icon_about">
+                                <ion-icon name="home"></ion-icon>
+                            </div>
+                            <div class="about_text">
+                                <p>Ontario, Canada</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icon_about">
+                                <ion-icon name="football"></ion-icon>
+                            </div>
+                            <div class="about_text">
+                                <p>Favourite sports are soccer and basketball</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icon_about">
+                                <ion-icon name="book"></ion-icon>
+                            </div>
+                            <div class="about_text">
+                                <p>Like to read novels in my spare time, specifically fantasy and/or martial arts novels</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icon_about">
+                                <ion-icon name="code"></ion-icon>
+                            </div>
+                            <div class="about_text">
+                                <p>Enjoy coding</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icon_about">
+                                <ion-icon name="happy"></ion-icon>
+                            </div>
+                            <div class="about_text">
+                                <p>Like hanging out with friends, watching movies/youtube videos, and just relaxing</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div id="project_section">
+                <div class="json_container">
+                    <p>{</p>
+                    <p>     “author”:     <span class="json_result">“Deepak Thangella”</span>,</p>
+                    <p>     “description”:     <span class="json_result">“OntarioTech Graduate | Software Engineer”</span>,</p>
+                    <p>     “portfolio”:     <span class="json_result">“deep-git.github.io/Portfolio/”</span>,</p>
+                    <p>     “repository”:     {</p>
+                    <p>          “type”:     <span class="json_result">“Open-source”</span>,</p>
+                    <p>          “link”:     <span class="json_result">“github.com/deep-git”</span></p>
+                    <p>     },</p>
+                    <p>     “engines”:     [</p>
+                    <p><span class="json_result">          “HTML”</span>,</p>
+                    <p><span class="json_result">          “CSS”</span>,</p>
+                    <p><span class="json_result">          “Javascript”</span>,</p>
+                    <p><span class="json_result">          “React”</span>,</p>
+                    <p><span class="json_result">          “React Native”</span>,</p>
+                    <p><span class="json_result">          “Node.js”</span>,</p>
+                    <p><span class="json_result">          “Express.js”</span>,</p>
+                    <p><span class="json_result">          “PostgreSQL”</span>,</p>
+                    <p><span class="json_result">          “Firebase”</span></p>
+                    <p>     ],</p>
+                    <p>     “dependencies”:     {</p>
+                    <p>          “sports”:     [</p>
+                    <p><span class="json_result">               “soccer”</span>,</p>
+                    <p><span class="json_result">               “basketball”</span></p>
+                    <p>          ],</p>
+                    <p>          “spare-time”:     [</p>
+                    <p><span class="json_result">               “watching movies”</span>,</p>
+                    <p><span class="json_result">               “hanging out with friends”</span>,</p>
+                    <p><span class="json_result">               “reading novels - fantasy/martial arts”</span>,</p>
+                    <p><span class="json_result">               “coding”</span>,</p>
+                    <p><span class="json_result">               “relaxing - surfing the web/watching youtube videos”</span></p>
+                    <p>          ]</p>
+                    <p>     }</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------ CONTACT PAGE ----------------------------------------------------- -->
+
+        <div id="contact" class="contact reveal">
+            <div class="contact_content">
+                <h1>Contact</h1>
+                <h2>Get in Touch</h2>
+                <p>
+                    If you have any further questions or are interested in my portfolio, please
+                    feel free to contact me through any of the mentioned services below.
+                </p>
+                <p>deepakthangella5@gmail.com</p>
+                <div class="contact_buttons_row">
                     <!--
-                    <div id="container_languages">
-                        <p>Languages</p>
-                        <div id="languages">
-                            <div>HTML</div>
-                            <div>CSS</div>
-                            <div>Javascript</div>
-                            <div>React</div>
-                            <div>Node</div>
-                            <div>Express</div>
-                            <div>PostgreSQL</div>
+                    <a href="">
+                        <div class="email_button">
+                            <ion-icon name="logo-google"></ion-icon>
+                            Email
                         </div>
-                    </div>
-                -->
-
-                    <div id="container_project">
-                        <p>< Projects /></p>
-                        <div id="projects">
-                            <div class="box box_cheatsheet">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p>cheatsheet</p></div>
-                                <div class="bottom">
-                                    <div class="github"><a href="https://github.com/deep-git/Cheatsheet">Github</a></div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box_materials">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p>materials design</p></div>
-                                <div class="bottom">
-                                    <div class="github"><a href="https://github.com/deep-git/Materials-design">Github</a></div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box_message">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p>pern todo-list</p></div>
-                                <div class="bottom">
-                                    <div class="github"><a href="https://github.com/deep-git/Todo-list">Github</a></div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box_reddit">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p>exercise-tracker</p></div>
-                                <div class="bottom">
-                                    <div class="github"><a href="https://github.com/deep-git/Exercise-tracker">Github</a></div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box_ecommerce">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p>capstone</p></div>
-                                <div class="bottom">
-                                    <div class="github"><a href="https://github.com/deep-git/Cheatsheet">Github</a></div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box_pern">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p>calorie tracker</p></div>
-                                <div class="bottom">
-                                    <div class="github"><a href="https://github.com/deep-git/Cheatsheet">Github</a></div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box7">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p></p></div>
-                                <div class="bottom">
-                                    <div class="github">Github</div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box8">
-                                <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p></p></div>
-                                <div class="bottom">
-                                    <div class="github">Github</div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
-                            <div class="box box9">
-                               <!--<img src="images/html_cheatsheet.png" alt="">-->
-                                <div class="transparent_project"></div>
-                                <div class="top_left"><p></p></div>
-                                <div class="bottom">
-                                    <div class="github">Github</div>
-                                    <div class="view">View</div>
-                                </div>
-                            </div>
+                    </a>
+                    -->
+                    <a href="https://github.com/deep-git" target="_blank">
+                        <div class="github_button">
+                            <ion-icon name="logo-github"></ion-icon>
+                            Github
                         </div>
-                    </div>
-                    <img id="top_wave" src="images/svg.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/deepak-thangella-ab5187279/" target="_blank">
+                        <div class="linkedin_button">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            Linkedin
+                        </div>
+                    </a>
                 </div>
-                <div id="qualifications">
-                    <div id="container_qualifications">
-                        <div id="resume_text">
-                            < Resume />
-                        </div>
-            
-                        <div id="resume_download">
-                            Download
-                        </div>
 
-                        <div id="resume_view">
-                            View
-                        </div>
-                    </div>
-            
-                    <img id="bottom_wave" src="images/svg.png" alt="">
+            </div>
+        </div>
 
-                    <div id="contact">
-                        <div id="contact_grid">
-                            <div id="about">
-                                <p class="contact_title">< About Me /></p>
-                                <div id="about_list">
-                                    <div id="university"><ion-icon name="school-outline"></ion-icon>Ontario Tech University</div>
-                                    <div id="university"><ion-icon name="home-outline"></ion-icon>Sarnia, Ontario, Canada</div>
-                                    <div id="university"><ion-icon name="basketball-outline"></ion-icon>Basketball, Soccer</div>
-                                    <div id="university"><ion-icon name="book-outline"></ion-icon>Reading novels</div>
-                                    <div id="university"><ion-icon name="terminal-outline"></ion-icon>Coding</div>
-                                    <div id="university"><ion-icon name="happy-outline"></ion-icon>Hanging out with friends</div>
-                                </div>
-                            </div>
-                            <div id="contact_details">
-                                <p class="contact_title">< Contact /></p>
-                                <div id="container_icons">
-                                    <div class="icons email">
-                                        deepakthangella5@gmail.com
-                                    </div>
-                                    <div class="icons githubs"><ion-icon name="logo-github"></ion-icon><a href="https://github.com/deep-git">Github</a></div>
-                                    <div class="icons linkedin"><ion-icon name="logo-linkedin"></ion-icon><a href="https://www.linkedin.com/in/deepak-thangella-ab5187279/">LinkedIn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- ------------------------------------------ AUTHOR PAGE ----------------------------------------------------- -->
+
+        <div id="author" class="author">
+            <div>
+                <div class="author_content">
+                    <p>Portfolio website</p>
+                    <p>Designed and built by Deepak Thangella</p>
                 </div>
-                
-                <div id="resume">
-                    <p>< Languages /></p>
-                    <div id="resume_container">
-                        <div><ion-icon name="logo-html5"></ion-icon><p>HTML</p></div>
-                        <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
-                        <div><ion-icon name="logo-javascript"></ion-icon><p>Javascript</p></div>
-                        <div><ion-icon name="logo-react"></ion-icon><p>React</p></div>
-                        <div><ion-icon name="logo-nodejs"></ion-icon><p>Node</p></div>
-                        <div><ion-icon name="logo-nodejs"></ion-icon><p>Express</p></div>
-                        <div><ion-icon name="cloud-upload-outline"></ion-icon><p>PostgreSQL</p></div>
-                    </div>
-                </div>
-                <footer>
-                    <p>Back to Top</p>
-                </footer>
+                <div class="scroll_up"><ion-icon name="arrow-up-outline"></ion-icon></div>
             </div>
         </div>
     </div>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
